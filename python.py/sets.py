@@ -1,0 +1,23 @@
+# s={1,}
+# print(type(s).__name__)
+s1={1,2,3,4,5,6}
+s2={4,5,6}
+# print(s1.union(s2))
+# print(s1.intersection(s2))
+# print(s1.difference(s2))
+# print(s1.issuperset(s2))
+# print(s2.issubset(s1))
+s1.add(7)
+print(s1)
+s1.update({33,45,22})
+print(s1)
+s1.discard(2)
+print(s1)
+s1.remove(7)
+print(s1)
+s1.pop()
+print(s1)
+# s1.clear()
+# print(s1)
+s3=s1.copy()
+print(s3)

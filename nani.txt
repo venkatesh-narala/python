@@ -1,0 +1,8 @@
+python:3:1:1
+is:3:1:1
+great:1:1:1
+easy:1:1:1
+to:1:1:1
+learn:1:1:1
+and:1:1:1
+powerful:1:1:1
