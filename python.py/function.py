@@ -61,3 +61,16 @@ def func(**a):
         print(f'{key}:{value}')
     # print(a)
 func(a='nani',b='sai')
+
+def fib(num):
+
+    if num==1 or num==2:
+        return 1
+    else:
+        return (fib(num-1)+fib(num-2))
+print(fib(3))
+# n=7
+# for i in range(1,n+1):
+#     print(fib(i),end=" ")
+
+print(pow(2,3))

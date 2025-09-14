@@ -40,3 +40,12 @@ for d in [{1:'one'},{2:'two'}]:
     for _,y in d.items():
         print(y) # only using second value
 
+# l=[1,2,3,4,5]
+# # l2=[6]
+# print(l+l2)
+
+
+l1=[10,20,30]
+l2=[40,50,60]
+l1[len(l1):0]=l2
+print(l1)
