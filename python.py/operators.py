@@ -77,13 +77,20 @@
 
 
 
-def word_count(str):
-    count=dict()
-    words=str.lower().split()
-    for word in words:
-        if word in count:
-            count[word]+=1
-        else:
-            count[word]=1
-    return count
-print(word_count('the the quick drown for jumps over the lazy '))
+# def word_count(str):
+#     count=dict()
+#     words=str.lower().split()
+#     for word in words:
+#         if word in count:
+#             count[word]+=1
+#         else:
+#             count[word]=1
+#     return count
+# print(word_count('the the quick drown for jumps over the lazy '))
+
+
+
+l1=[1,2,3,4]
+l2=[5,6,7,8]
+l3=zip(l1,l2)
+print(list(l3))
