@@ -64,7 +64,7 @@ d = {1: "one", 2: "two", 1: "duplicate", 1:"another"}
 d.update({1:"nani"})
 print(d)   # {1: 'duplicate', 2: 'two'}
 
-
+print(d.get(1))
 colors = {"red", "green", "blue" , "yellow"}
 for c in colors:
     print(c)

@@ -74,3 +74,97 @@ print(fib(3))
 #     print(fib(i),end=" ")
 
 print(pow(2,3))
+
+
+
+def fun():
+    x=19
+    y=1.7
+    z='nani'
+print(fun.__code__.co_nlocals)
+
+x=19
+y=1.7
+z='nani'
+
+def fun():
+    return x+y
+
+print(len(fun.__code__.co_names))
+
+
+
+def get_permutation(string,i=0):
+    if i==len(string):
+        print("".join(string))
+    for j in range(i , len(string)):
+        words=[c for c in string]
+        words[i],words[j]=words[j],words[i]
+        get_permutation(words ,i+1 )
+get_permutation('run')
+
+s='nani'
+wordss=list(s)
+print(wordss)
+
+
+import numpy as np
+
+# data=[10,29,37,48,789]
+# data=np.array('i',[29,37,48,789])
+
+# mean_value=np.mean(data)
+
+# print(mean_value)
+
+print(np.__version__)
+array=np.array([18,38,49,5 ], dtype=int)
+print(array)
+print(type(array))
+print(np.mean(array))
+median_value=np.median(array)
+print(median_value)
+
+
+# li=[10,40,30,20]
+s='nani'
+
+median=list(sorted(s))
+print(median)
+
+
+# median using without libraries
+
+data=[10,30,20,40]
+
+data.sort()
+
+n=len(data)
+
+if n%2==1:
+    mid=data[ n//2]
+else :
+    mid1=data[n//2 -1]
+    mid2=data[n//2]
+    mid=(mid1+mid2)/2
+
+print('Data:',data)
+print('Median:',mid)
+
+
+
+l2=[10,20,30,10,10]
+
+count={}
+
+for i in l2:
+
+    if i in count:
+        count[i]+=1
+    else:
+        count[i]=1
+
+mode_value=max(count , key=count.get)
+
+
+print(mode_value)   
